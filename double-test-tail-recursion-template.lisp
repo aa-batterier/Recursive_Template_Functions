@@ -6,7 +6,7 @@
 ;         (end-test-2 end-value-2)
 ;         (T (func reduced-x))))
 
-; Function DOUBLE-TEST-TAIL-RECURSION-TEMPLATE returns a function based on the template above.
+; DOUBLE-TEST-TAIL-RECURSION-TEMPLATE returns a function based on the template above.
 (defun double-test-tail-recursion-template (end-test-1 end-value-1 end-test-2 end-value-2 recfn)
   (labels ((self (lst)
              (cond ((funcall end-test-1 lst) (funcall end-value-1 lst))
