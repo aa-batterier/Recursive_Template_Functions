@@ -15,7 +15,7 @@
                                 ; (self (cdr lst)))))))
     #'self))
 
-; SINGLE-TEST creates an easier interface for DOUBLE-TEST-TAIL-RECURSION-TEMPLATE.
+; SINGLE-TEST creates an easier interface for SINGLE-TEST-TAIL-RECURSION-TEMPLATE.
 (defmacro single-test (end-test end-value recfn)
   `(single-test-tail-recursion-template
      #'(lambda (it) ,end-test)
